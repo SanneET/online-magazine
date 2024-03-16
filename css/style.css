@@ -247,8 +247,39 @@
     width: 200px;
     height: 200px;
   }
+
+
+/*Teknik page*/
+
+.subHeader{
+  display: flex;
+  justify-content:space-around;
+
+
+}
+.subHeaderImg{
+  display: flex;
+  justify-content: space-around;
   
-  @media (max-width: 800px) {
+}
+
+.subHeaderImg img{
+  width: 800px;
+  
+}
+
+.listContainer{
+  display: flex;
+  margin-left: 116px;
+}
+.subTitle {
+  margin-left: 100px;
+
+}
+
+
+  
+@media (max-width: 800px) {
     .hideOnMobile {
       display: none;
     }
@@ -257,30 +288,10 @@
     }
   }
   
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
     .sidebar {
       width: 100%;
     }
   }
   
-  .booking {
-    margin: 20px;
-  }
-  
-  .bookingHead {
-    margin: 70px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 4em;
-    font-weight: 900;
-    color: #23568c;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .bookingTekst {
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
   

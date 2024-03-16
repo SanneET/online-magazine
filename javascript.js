@@ -18,8 +18,6 @@ function hideSidebar() {
   }
 
 
-  const countries = document.querySelectorAll('.country');
-
 
   /* Make picture pops out induvelly*/
 
