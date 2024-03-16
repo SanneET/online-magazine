@@ -261,22 +261,61 @@
   display: flex;
   justify-content: space-around;
   
+  
+}
+
+.subHeaderText{
+  font-size: 6rem;
 }
 
 .subHeaderImg img{
-  width: 800px;
+  width: 1400px;
+  height: 800px;
   
+}
+.introText{
+  display: flex;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 1.3rem;
 }
 
 .listContainer{
   display: flex;
-  margin-left: 116px;
+  justify-content: space-around;
+}
+
+.list{
+  margin-top: 70px;
+  font-size: 1.3rem;
 }
 .subTitle {
-  margin-left: 100px;
+  
+  margin-left: 140px;
+
+}
+.subTitleCooking {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.cookingText{
+  display: flex;
+  justify-content: center;
 
 }
 
+.cookingImg img{
+  width: 500px;
+  height: 500px;
+}
+
+.cookingImg {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
 
   
 @media (max-width: 800px) {
