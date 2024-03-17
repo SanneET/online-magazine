@@ -249,11 +249,12 @@
   }
 
 
-/*Teknik page*/
+/*dumplingTeknik page*/
 
 .subHeader{
   display: flex;
   justify-content:space-around;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
@@ -270,14 +271,19 @@
 
 .subHeaderImg img{
   width: 1400px;
-  height: 800px;
+  height: 700px;
+  margin-bottom: 20px;
   
 }
 .introText{
   display: flex;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 15px;
   font-size: 1.3rem;
+  background-color: #1F332C;
+  border-radius: 15px;
+  color: #FCE2DA;
 }
 
 .listContainer{
@@ -310,27 +316,52 @@
   width: 500px;
   height: 500px;
 }
-
 .cookingImg {
-  padding-top: 2%;
   display: flex;
   justify-content: space-around;
 }
 
-  
+.cookingpicture {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+  /*  Teknikpage */
+
+
+.FourPicture{
+  width: 400px;
+  height: 400px;
+  align-items: center;
+}
+
+.FourColumnRow{
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+.FourColumnRow article {
+  text-align: center;
+}
+
 @media (max-width: 800px) {
-    .hideOnMobile {
-      display: none;
+  .hideOnMobile {
+    display: none;
     }
-    .menuButton {
-      display: block;
-    }
+  .menuButton {
+    display: block;
   }
+}
   
 @media (max-width: 400px) {
-    .sidebar {
-      width: 100%;
-    }
+  .sidebar {
+   width: 100%;
   }
+}
   
   
