@@ -10,50 +10,53 @@
     <header>
         <!--Main nav bar-->
         <nav>
-        <ul class="sidebar">
-            <li onclick="hideSidebar()">
-            <a href="#"
-                ><img
-                src="img/close_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="close"
-                style="width: 26px; margin-left: -5px"
-            /></a>
-            </li>
-            <li><a href="#">Sydasiatiske Favoritter</a></li>
-            <li><a href="#">Land</a></li>
-            <li><a href="#">Budgetvenligt</a></li>
-            <li><a href="#">Tenikker</a></li>
-            <li><a href="#">Om os</a></li>
-        </ul>
-
-        <ul>
+          <ul> 
             <li>
-            <a href="index.html"
+              <a href="index.html"
                 ><img class="navImg" src="img/Spicy.png" alt="Logo"
-            /></a>
+              /></a>
             </li>
-            <li class="hideOnMobile"><a href="padKrapow.html">Sydasiatiske favoritter</a></li>
-            <li class="hideOnMobile land" data-country="country" ><a href="#">Lande</a>
-                <section class="popout">
-                    <p><a href="thailand.html">Thailand</a></p>
-                    <p><a href="vietnam.html">Vietnam</a></p>
-                    <p><a href="laos.html">Laos</a></p>
-                </section>
-            
-        
+            <li> 
+              <a href="#">Sydasiatiske Favoritter</a> 
+              <ul class="submenu"> 
+                <li><a href="#">Pad thai</a></li> 
+                <li><a href="padKrapow.html">Pad Krapow</a></li> 
+                <li><a href="#">Pa Naeng</a></li> 
+              </ul> 
+            </li> 
+            <li> 
+              <a href="#">Lande</a> 
+              <ul class="submenu"> 
+                <li><a href="#">Thailand</a></li> 
+                <li><a href="#">Vietnam</a></li> 
+                <li><a href="#">Laos</a></li> 
+              </ul> 
             </li>
-            <li class="hideOnMobile"><a href="#">Budgetvenligt</a></li>
-            <li class="hideOnMobile"><a href="tenikker.html">Tenikker</a></li>
-            <li class="hideOnMobile"><a href="#">Om os</a></li>
-            <li class="menuButton" onclick="showSidebar()">
-            <a href="#"
-                ><img
-                src="img/menu_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=""
-                style="width: 26px"
-            /></a>
+            <li> 
+              <a href="#">Budgetvenligt</a> 
+              <ul class="submenu"> 
+                <li><a href="#">Su-venligt</a></li> 
+                <li><a href="#">Gode Råvare</a></li> 
+              </ul> 
+            </li> 
+            <li> 
+              <a href="tenikker.html">Tenikker</a> 
+              <ul class="submenu"> 
+                <li><a href="tenikkerDumbling.html">Forming af dumpling</a></li> 
+                <li><a href="#">Rulling</a></li> 
+              </ul> 
             </li>
-        </ul>
+            <li> 
+              <a href="#">Om os</a> 
+              <ul class="submenu"> 
+                <li><a href="#">lær os at kende</a></li> 
+                <li><a href="#">Firma</a></li> 
+              </ul> 
+            </li>  
+
+
+
+          </ul>
         </nav>
     </header>
 
@@ -90,7 +93,7 @@
   
 
   <section class="listContainer">
-      <ul class="list">
+      <ul class="list" >
           <li>
               <p>3 store hvidløg</p>
           </li>
@@ -108,7 +111,7 @@
           </li>
           <br>
           <li>
-              <p>400g svinekød</p>
+              <p>400g svinekød eller små stykker flæskesteg/ribbensteg tilbredt før.</p>
           </li>
           <br>
           <li>
@@ -130,8 +133,12 @@
           <li>
             <p>1 stegt æg på panden serveres med. dog er det ikke et 'must'</p>
           </li>
+          <br>
+          <br>
         </ul>
-
+        <article>
+          <img id="padKrapowId" src="/img/padkrapow-unsplash.jpg" alt="Pad krapow">
+        </article>
   </section>
 
     
@@ -141,7 +148,7 @@
     
 
     <section class="listContainer">
-        <ol class="list">
+        <ol class="list howToDo">
             <li>
                 <p>Pil hvidløg og løg. skær her hvidløg i små og løg kan du skære groft eller alt eftter hvad du ønsker.</p>
             </li>
@@ -179,31 +186,59 @@
             </li>
             
         </ol>
+        <article>
+          <img id="padKrapowId" src="/img/cuttingOnion.jpg" alt="Cutting Oninon" style="margin-right: 180px;">
+        </article>
+
+        
 
     </section>
 
     <section class="subTitleCooking">
 
-        <h2 >Tilberedninger</h2>
+        <h2> Alternativer</h2>
 
     </section>
-
-    <section class="cookingImg">
-
-        <article class="cookingImg">
-            <a href="tenikkerDumbling.html">
-                <h2 class="cookingText" >Stegt på panden</h2>
-                <img class="cookingpicture" src="img/fryedDumbling.JPG" alt="">
-            </a>
+    <section class="listContainer">
+      <ul class="list" >
+          <li>
+              <p>Hvidløg = hvidløg pluver dog vil smagen ikke være det samme.</p>
+          </li>
+          <br>
+          <li>
+              <p>Løg = Her kan du bruge alle grøntsager du kan tilføje til retten, kun fantasien sætter grænser.</p>
+          </li>
+          <br>
+          <li>
+              <p>Frisk sød thai baslilkum = Hvis der ikke kan findes så vil alem basil også gøre det eller helt uden.</p>
+          </li>
+          <br>
+          <li>
+              <p>Fiske sauce giver et pifft til padkrapow men det ikke nødvendligt.</p>
+          </li>
+          <br>
+          <li>
+              <p>Svinekød = her kan du skifte det ud med andet protiner men den abefalets med svin.</p>
+          </li>
+          <br>
+          <li>
+              <p><strong>Soja og østersauce er et must</strong></p>
+          </li>
+          <br>
+          <li>
+            <p>Soja smag endelig til men start med 1spsk.</p>
+          </li>
+          <br>
+          <li>
+            <p>Stegt æg er ikke et must og kan sagtens undlades.</p>
+          </li>
+          <br>
+        </ul>
+        <article>
+          <img id="padKrapowId" src="/img/padkrapow-unsplash.jpg" alt="Pad krapow">
         </article>
-        <article class="cookingImg">
-            <a href="#">
-                <h2 class="cookingText" >Airfry</h2>
-                <img class="cookingpicture" src="img/dumbling-airfry.JPG" alt="">  
-            </a>
-        </article>
+    </section>
     
-    </section>
 
 
 

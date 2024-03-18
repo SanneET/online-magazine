@@ -16,7 +16,8 @@
   
   nav {
     background-color: white;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
   }
   
   /* Styling unordered list container */
@@ -27,7 +28,8 @@
     justify-content: flex-end;
     align-items: center;
     background-color: #1F332C;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 1);
+    box-shadow: -10px 0 10px rgb(43, 42, 42);
+    z-index: 99;
   }
   .h2{
     color: #1F332C;
@@ -48,46 +50,31 @@
     color: #FCE2DA;
     font-weight: bold;
     font-size: large;
+    
   }
   
   /* styling hover effect on anchors */
   nav a:hover {
-    background-color: #395c50;
-  }
-  .popout{
-
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 8%;
-    background-color: #1F332C;
-    border: 1px solid ;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    color: #FCE2DA;
-  }
-
-  .land:hover .popout {
-    display: block;
-  }
-  .popoutTekik {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 8%;
-    background-color: #1F332C;
-    border: 1px solid ;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    color: #FCE2DA;
+    background-color: #304d42;
+    z-index: 99;
   }
   
-  .teknik:hover .popoutTekik {
-    display: block;
+  ul ul.submenu { 
+    display: none; 
+    z-index: 100;
+  } 
+   
+  ul li:hover > ul.submenu { 
+    display: block; 
+    z-index: 101;
+    position: relative;
   }
 
+  .submenu {
+  z-index: 1000; /* Adjust the value as needed */
+}
+
+  
 
   
   /* Styling first list-item inside nav container */
@@ -99,26 +86,6 @@
     width: 150px;
   }
   
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: white;
-    backdrop-filter: blur(10px);
-  }
-  
-  .sidebar li {
-    width: 100%;
-  }
-  
   .menuButton {
     display: none;
   }
@@ -128,6 +95,7 @@
   .heroBgImg {
     width: 100%;
     height: 900px;
+    
   }
   
   .threeColumnRow {
@@ -140,6 +108,7 @@
   
   .threePicture {
     width: 500px;
+    height: 500px;
   }
   
   .threePicture img {
@@ -162,14 +131,14 @@
 
   */
   
-  .bookingSection {
+  .LearnMore {
     display: flex;
     justify-content: center;
   }
   
   .btn {
     border-radius: 7px;
-    border: 2px solid #1c6ea4;
+    border: 2px solid #1F332C;
     background: #1F332C;
     color: #FCE2DA;
     text-align: center;
@@ -237,6 +206,7 @@
     
     color: #8F8274;
     font-size: 1.3rem;
+  
   }
 
   .footPicture {
@@ -265,20 +235,21 @@
   
 }
 
+
 .subHeaderText{
   font-size: 6rem;
 }
 
 .subHeaderImg img{
-  width: 1400px;
+  width: 1200px;
   height: 700px;
   margin-bottom: 20px;
   
 }
 .introText{
   display: flex;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 200px;
+  margin-right: 200px;
   padding: 15px;
   font-size: 1.3rem;
   background-color: #1F332C;
@@ -297,7 +268,7 @@
 }
 .subTitle {
   
-  margin-left: 140px;
+  margin-left: 200px;
 
 }
 .subTitleCooking {
@@ -329,6 +300,10 @@
   justify-content: space-around;
 
 }
+#Dumplingtenikker {
+  margin-right: 300px;
+}
+
 
   /*  Teknikpage */
 
@@ -359,6 +334,15 @@
   padding: 2%;
 
   
+}
+#padKrapowId {
+  width: 400px;
+  margin-top: 120px;
+}
+
+.howToDo {
+  margin-left: 220px;
+
 }
 
 
