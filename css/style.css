@@ -315,6 +315,8 @@
 .cookingImg img{
   width: 500px;
   height: 500px;
+  padding: 2%;
+
 }
 .cookingImg {
   display: flex;
@@ -348,6 +350,17 @@
 .FourColumnRow article {
   text-align: center;
 }
+/* pad krapow*/
+
+#padKrapowImg {
+  width: 900px;
+  height: 900px;
+  background-color: #1F332C;
+  padding: 2%;
+
+  
+}
+
 
 @media (max-width: 800px) {
   .hideOnMobile {
