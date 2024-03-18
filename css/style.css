@@ -86,6 +86,7 @@
     width: 150px;
   }
   
+
   .menuButton {
     display: none;
   }
@@ -97,14 +98,13 @@
     height: 900px;
     
   }
-  
   .threeColumnRow {
-
     padding-top: 2%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
   }
+  
   
   .threePicture {
     width: 500px;
@@ -324,6 +324,10 @@
 
 .FourColumnRow article {
   text-align: center;
+}
+
+.fourText {
+  
 }
 /* pad krapow*/
 

@@ -20,5 +20,17 @@ function hideSidebar() {
 
 
   /* Make picture pops out induvelly*/
-
+  document.addEventListener("DOMContentLoaded", function () {
+    var threePictures = document.querySelectorAll(".threePicture");
+  
+    threePictures.forEach(function (picture) {
+      picture.addEventListener("mouseover", function () {
+        picture.style.transform = "scale(1.3)";
+      });
+  
+      picture.addEventListener("mouseout", function () {
+        picture.style.transform = "scale(1)";
+      });
+    });
+  });
   
