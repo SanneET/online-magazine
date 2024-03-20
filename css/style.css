@@ -5,6 +5,8 @@
     box-sizing: border-box;
     max-width: 2000px;
   }
+  @import url(https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap);
+  
   a {
     text-decoration: none;
   }
@@ -58,6 +60,8 @@
     color: #FCE2DA;
     font-weight: bold;
     font-size: large;
+    font-family: 'Mochiy Pop P One'sans-serif;
+  
     
   }
   
@@ -160,6 +164,7 @@
     padding: 10px;
     margin: 30px;
     cursor: pointer;
+    font-weight: bold;
   }
 
 
@@ -200,7 +205,7 @@
     font-size: 3rem;
     padding-bottom: 3rem;
   }
-  /*styling icon size*/
+  /*styling icon size in footer*/
   .icon{
     height: 3%;
     width:  3%;
@@ -388,4 +393,10 @@
 
 .howToDo {
   margin-left: 0%; 
+}
+#lastP {
+  margin-bottom: 4%;
+}
+.smallPicture{
+  width: 35%;
 }
