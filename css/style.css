@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 2000px;
+  }
+  a {
+    text-decoration: none;
   }
   
   /* Styling the body selector with an background image */
@@ -27,12 +31,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #1F332C;
+    background-color: #2a3630;
     box-shadow: -10px 0 10px rgb(43, 42, 42);
     z-index: 99;
   }
+  /*Styling all h2*/
   .h2{
-    color: #1F332C;
+    color: #2a3630;
+  }
+  .pText{
+    margin-top: 3%;
   }
   
   /* Styling unordered lits-items*/
@@ -92,12 +100,13 @@
   }
   
   /* --------------------- MAIN CONTENT ------------------------ */
-  
+  /* Styling size of landing picture*/
   .heroBgImg {
     width: 100%;
-    height: 900px;
+    height: 100%;
     
   }
+  /* Styling the 3 pictures on frontpage */
   .threeColumnRow {
     padding-top: 2%;
     display: flex;
@@ -107,13 +116,15 @@
   
   
   .threePicture {
-    width: 500px;
-    height: 500px;
+    width: 45%;
+    height: 45%;
+    margin-left: 25%;
   }
   
   .threePicture img {
     transition: transform 0.3s ease-in-out;
   }
+  /*making the picture scale up when hovering*/
   .threePicture:hover img {
     transform: scale(1.3);
   }
@@ -122,25 +133,26 @@
     margin: 10px 30px;
   }
   
+  /*styling the p so it fits with the 3 pictures*/
   .threeText {
     display: flex;
     justify-content: center;
+    margin-right: 5%;
   }
 
-  /*
-
-  */
+  /* Styling the button "lær teknikker her" */
   
-  .LearnMore {
+  .learnMore {
     display: flex;
     justify-content: center;
+    
   }
   
   .btn {
     border-radius: 7px;
-    border: 2px solid #1F332C;
-    background: #1F332C;
-    color: #FCE2DA;
+    border: 2px solid #8F8274;
+    background: #8F8274;
+    color: #2a3630;
     text-align: center;
     font-size: 20px;
     width: 600px;
@@ -151,7 +163,7 @@
   }
 
 
-  
+/*styling the footer */
   footer {
     color: white;
     background-color: #494949;
@@ -173,13 +185,13 @@
     color: white;
     text-decoration: none;
   }
-  
+  /*styling footer so it have underline*/
   footer a:hover {
     text-decoration: underline;
   }
   
   .footPicture {
-    width: 900px;
+    width: 100%;
   }
   .footpic {
     display: flex;
@@ -188,11 +200,12 @@
     font-size: 3rem;
     padding-bottom: 3rem;
   }
+  /*styling icon size*/
   .icon{
-    height: 30px;
-    width:  30px;
+    height: 3%;
+    width:  3%;
   }
-  
+/*styling the box on beside picture on the bottom*/
   .information {
     display: flex;
     justify-content: space-evenly;
@@ -200,37 +213,44 @@
   
   .information article {
     border-radius: 15px;
-    padding: 50px;
-    background-color: #1F332C;
-    margin-right: 15px;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 12;
+    background-color: #2a3630;
+    margin-right: 2%;
     
     color: #8F8274;
     font-size: 1.3rem;
   
   }
-
+/*styling the picture beside the information box*/
   .footPicture {
     border-radius: 10px; /*Round the edges around the img*/
   }
-  
+  /* styling the logo in the footer */
   .aak-logo {
-    width: 200px;
-    height: 200px;
+    width: 10%;
+    height: 10%;
   }
 
 
-/*dumplingTeknik page*/
 
+/*-------------------------------dumplingTeknik page----------------------------------*/
+
+/*styling the first section on page... img, text and titles*/
 .subHeader{
   display: flex;
   justify-content:space-around;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
+
 .subHeaderImg{
   display: flex;
   justify-content: space-around;
+  width: 60%;
+  margin-left: 20%;
   
   
 }
@@ -238,55 +258,68 @@
 
 .subHeaderText{
   font-size: 6rem;
+  color: #1F332C;
 }
 
 .subHeaderImg img{
-  width: 1200px;
-  height: 700px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
   
 }
 .introText{
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1%;
   font-size: 1.3rem;
-  background-color: #1F332C;
-  border-radius: 15px;
+  background-color: #2a3630;
+  border-radius: 2%; /*give a little curve around the box*/
   color: #FCE2DA;
 }
 
+/*styling the two diffrent list and title*/
 .listContainer{
   display: flex;
   justify-content: space-around;
+  margin-left: 11%;
 }
 
 .list{
-  margin-top: 70px;
+  margin-top: 5%;
   font-size: 1.3rem;
+  
 }
 .subTitle {
   
-  margin-left: 200px;
+  margin-left: 10%;
+  color: #2a3630;
+  font-size: 1.6rem;
+  margin-top: 2%;
 
 }
 .subTitleCooking {
-  margin-top: 50px;
+  margin-top: 8%;
   display: flex;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 2%;
+  color: #2a3630;
+  font-size: 1.6rem;
 }
 .cookingText{
   display: flex;
   justify-content: center;
+  color:#2a3630;
 
 }
-
+/*styling img*/
 .cookingImg img{
-  width: 500px;
-  height: 500px;
+  width: 90%;
+  height: 90%;
   padding: 2%;
+  margin-left: 8%;
 
 }
 .cookingImg {
@@ -300,17 +333,22 @@
   justify-content: space-around;
 
 }
-#Dumplingtenikker {
-  margin-right: 300px;
+/*styling video*/
+.video { /*making the video fit margin with other elements*/
+  margin-right: 8%;
+  
+}
+#Dumplingtenikker { /*making the list fit with the margin with other element */
+  margin-right: 20%;
 }
 
 
-  /*  Teknikpage */
+/*  .............................Teknikpage.................................. */
 
-
+/*styling the four picture below and its text*/
 .FourPicture{
-  width: 400px;
-  height: 400px;
+  width: 70%;
+  height: 70%;
   align-items: center;
 }
 
@@ -327,42 +365,27 @@
 }
 
 .fourText {
+  color: #2a3630;
   
 }
-/* pad krapow*/
+/* .........................pad krapow page.............................*/
 
-#padKrapowImg {
-  width: 900px;
-  height: 900px;
+/* styling img*/
+.padKrapowImg {
   background-color: #1F332C;
-  padding: 2%;
-
+  padding: 1%;
+  display: flex;
+  margin-left: 20%;
+  margin-bottom: 1%;
   
 }
-#padKrapowId {
-  width: 400px;
-  margin-top: 120px;
+
+.padKrapowId {
+  width: 20%; 
+  margin-top: 15%; 
+  margin-left: 42%;
 }
 
 .howToDo {
-  margin-left: 220px;
-
+  margin-left: 0%; 
 }
-
-
-@media (max-width: 800px) {
-  .hideOnMobile {
-    display: none;
-    }
-  .menuButton {
-    display: block;
-  }
-}
-  
-@media (max-width: 400px) {
-  .sidebar {
-   width: 100%;
-  }
-}
-  
-  
